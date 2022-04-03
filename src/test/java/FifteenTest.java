@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.awt.*;
 import java.time.Duration;
 
 public class FifteenTest {
@@ -36,7 +37,7 @@ public class FifteenTest {
     }
 
     @Test
-    public void signUp(){
+    public void openSignUp(){
         WebDriver driver = new ChromeDriver();
         driver.get(Help.DEMOBLAZE);
         driver.manage().window().maximize();
@@ -296,8 +297,6 @@ public class FifteenTest {
         sendMsgBTN.click();
         Thread.sleep(2000);
         driver.switchTo().alert().dismiss();
-
-
 
     }
 
